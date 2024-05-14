@@ -27,9 +27,20 @@ void Mahasiswa::setID() {
 void Mahasiswa::printAll() {
     cout << "ID    = " << id << endl;
     cout << "Nama  = " << nama << endl;
+    cout << endl;
 }
+
 int main()
 {
-    std::cout << "Hello World!\n";
+    Mahasiswa mhs1("Sri Dadi");
+    Mahasiswa mhs2("Budi Jatmiko");
+    Mahasiswa::setNim(9); //mengakses nim melalui static member function "setNim"
+    Mahasiswa mhs3("Andi Janu");
+    Mahasiswa mhs4("Joko Wahono");
+
+    mhs1.printAll();
+    mhs2.printAll();
+    mhs3.printAll();
+    mhs4.printAll();
 }
 
