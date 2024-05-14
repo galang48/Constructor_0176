@@ -12,7 +12,9 @@ public:
     void setID();
     void printAll();
 
-   
+    Mahasiswa(string pnama) :nama(pnama) {
+        setID();
+    }
 };
 
 
